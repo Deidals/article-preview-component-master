@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("Manrope/static/Manrope-Light.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Manrope Bold";
+    src: url("Manrope/static/Manrope-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+.attribution{
+    font-size: 11px; text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+body{
+    height: 100%;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.bigcontainer{
+    margin: auto;
+    width: 330px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+    line-height: 1.6;
+    color:  hsl(217, 19%, 35%);
+    font-family: "Manrope";
+} 
+
+img{
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    height: auto;
+}
+header p{
+    font-family: "Manrope Bold";
+    font-size: 20px;
+    margin: 20px 20px 5px;
+}
+main{
+    font-size: 13px;
+    padding: 20px;
+}
+footer{
+    padding: 20px;
+}
