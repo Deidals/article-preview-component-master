@@ -102,6 +102,17 @@ figure p{
     letter-spacing: 5px;
 }
 
+@keyframes upDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+
 .bubbleContainer{
     position: relative;
     width: 30%;
@@ -111,8 +122,8 @@ figure p{
 
 .speech-bubble{
     position: absolute;
-    bottom: 200%;
-    left: 87%;
+    bottom: 150%;
+    left: -50%;
     transform: translateX(-50%);
     background:  hsl(217, 19%, 35%);
     border-radius: 15px;
@@ -127,12 +138,13 @@ figure p{
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    animation: upDown 1.5s infinite ease-in-out; /* Apply animation */
 }
   
 .speech-bubble::after{
     content: "";
     position: absolute;
-    bottom: -15px;
+    bottom: -14px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
